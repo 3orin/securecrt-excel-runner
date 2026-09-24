@@ -10,6 +10,10 @@ timestamp. Change the job by editing the sheet, not the script.
 <!-- VIDEO: on GitHub, edit this README and drag media/demo_cisco_devnet.mp4 onto this line -
      GitHub uploads it and inserts a link that shows as a video player. -->
 
+https://github.com/user-attachments/assets/25713781-5ed0-4470-a242-6efdee658f18
+
+
+
 **Demo** (2:23, no sound): the Cisco sample running against the DevNet IOS-XE sandbox, results filling
 in live — [`media/demo_cisco_devnet.mp4`](media/demo_cisco_devnet.mp4). Camera recording of the screen.
 
