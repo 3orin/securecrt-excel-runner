@@ -1,0 +1,246 @@
+-------------- route-server.ip.att.net ---------------
+---------  AT&T IP Services Route Monitor  -----------
+
+The information available through route-server.ip.att.net is offered
+by AT&T's Internet engineering organization to the Internet community.
+
+This router maintains eBGP peerings with customer-facing routers
+throughout the AT&T IP Services Backbone:
+
+ IPv4:           IPv6:                             City:
+ 12.122.124.12   2001:1890:ff:ffff:12:122:124:12   Atlanta, GA
+ 12.122.124.67   2001:1890:ff:ffff:12:122:124:67   Cambridge, MA
+ 12.122.127.66   2001:1890:ff:ffff:12:122:127:66   Chicago, IL
+ 12.122.124.138  2001:1890:ff:ffff:12:122:124:138  Dallas, TX
+ 12.122.83.238   2001:1890:ff:ffff:12:122:83:238   Denver, CO
+ 12.122.120.7    2001:1890:ff:ffff:12:122:120:7    Fort Lauderdale, FL
+ 12.122.125.6    2001:1890:ff:ffff:12:122:125:6    Los Angeles, CA
+ 12.122.125.44   2001:1890:ff:ffff:12:122:125:44   New York, NY
+ 12.122.125.106  2001:1890:ff:ffff:12:122:125:106  Philadelphia, PA
+ 12.122.125.132  2001:1890:ff:ffff:12:122:125:132  Phoenix, AZ
+ 12.122.125.165  2001:1890:ff:ffff:12:122:125:165  San Diego, CA
+ 12.122.126.232  2001:1890:ff:ffff:12:122:126:232  San Francisco, CA
+ 12.122.159.217  2001:1890:ff:ffff:12:122:159:217  San Juan, PR
+ 12.122.125.224  2001:1890:ff:ffff:12:122:125:224  Seattle, WA
+ 12.122.126.9    2001:1890:ff:ffff:12:122:126:9    St. Louis, MO
+ 12.122.126.64   2001:1890:ff:ffff:12:122:126:64   Washington, DC
+
+*** Please Note:
+Ping and traceroute delay figures measured here are unreliable, due to the
+high CPU load experienced when complicated show commands are running.
+
+For questions about this route-server, send email to: dl-route-server@att.com
+
+*** Log in with username 'rviews', password 'rviews' *** 
+
+login: 
+login: rviews
+Password:
+Last login: Thu Sep 24 14:02:49 from x.x.x.x
+
+--- JUNOS 23.2R1.13 Kernel 64-bit  JNPR-12.1-20230613.7723847_buil
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> set cli screen-length 0 
+Screen length set to 0
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> show version
+                                     ^
+syntax error, expecting <command>.
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> show route 8.8.8.8 
+
+inet.0: 1063546 destinations, 17014895 routes (1063545 active, 3 holddown, 1 hidden)
++ = Active Route, - = Last Active, * = Both
+
+8.8.8.0/24         *[BGP/170] 29w0d 07:48:38, localpref 100, from 12.122.83.238
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 33w5d 17:09:22, localpref 100, from 12.122.120.7
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 2w3d 09:10:45, localpref 100, from 12.122.124.12
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 9w2d 09:03:34, localpref 100, from 12.122.124.67
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 33w5d 17:09:22, localpref 100, from 12.122.124.138
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 33w5d 17:09:22, localpref 100, from 12.122.125.6
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 9w2d 09:03:31, localpref 100, from 12.122.125.44
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 1w4d 02:12:09, localpref 100, from 12.122.125.106
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 33w5d 17:09:22, localpref 100, from 12.122.125.132
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 3w2d 00:52:22, localpref 100, from 12.122.125.165
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 6d 04:35:42, localpref 100, from 12.122.125.224
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 33w5d 17:09:22, localpref 100, from 12.122.126.9
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 33w5d 17:09:22, localpref 100, from 12.122.126.64
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 6d 04:35:41, localpref 100, from 12.122.126.232
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 33w5d 17:09:22, localpref 100, from 12.122.127.66
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+                    [BGP/170] 2w3d 09:10:30, localpref 100, from 12.122.159.217
+                      AS path: 7018 15169 I, validation-state: valid
+                    >  to 12.0.1.1 via em0.0
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> show bogus-command
+                                     ^
+syntax error, expecting <command>.
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> show i
+                                     ^
+syntax error, expecting <command>.
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> set cli screen-length 10 
+Screen length set to 10
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> show version
+                                     ^
+syntax error, expecting <command>.
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> show bgp summary 
+Threading mode: BGP I/O
+Default eBGP mode: advertise - accept, receive - accept
+Groups: 2 Peers: 32 Down peers: 0
+Table          Tot Paths  Act Paths Suppressed    History Damp State    Pending
+inet.0               
+                17014753    1063430          0          0          0          0
+inet6.0              
+                 3866339     241663          0          0          0          0
+Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
+12.122.83.238          7018  127914043     366565       0       0 33w5d 23:48:22 Establ
+  inet.0: 1063407/1063422/1063422/0
+12.122.120.7           7018  119631298     366565       0       0 33w5d 23:48:13 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.124.12          7018   95214574     366565       0       0 33w5d 23:48:08 Establ
+  inet.0: 9/1063426/1063426/0
+12.122.124.67          7018  131856591     366565       0       0 33w5d 23:48:03 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.124.138         7018   94379331     366564       0       0 33w5d 23:48:01 Establ
+  inet.0: 0/1063426/1063426/0           
+12.122.125.6           7018  105899679     366564       0       0 33w5d 23:48:02 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.125.44          7018  122060152     366565       0       0 33w5d 23:48:13 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.125.106         7018    6836397      17156       0       3 1w4d 2:12:26 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.125.132         7018  131779004     366565       0       0 33w5d 23:48:18 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.125.165         7018  135810997     366565       0       0 33w5d 23:48:18 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.125.224         7018  135328010     366565       0       0 33w5d 23:48:18 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.126.9           7018  117956732     366565       0       0 33w5d 23:48:08 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.126.64          7018  116443524     366565       0       0 33w5d 23:48:03 Establ
+  inet.0: 0/1063422/1063422/0
+12.122.126.232         7018  107519678     366565       0       0 33w5d 23:48:13 Establ
+  inet.0: 1/1063423/1063423/0           
+12.122.127.66          7018   94963216     366565       0       0 33w5d 23:48:22 Establ
+  inet.0: 0/1063426/1063426/0
+12.122.159.217         7018    4319134      30168       0       4 2w5d 12:07:58 Establ
+  inet.0: 13/1063410/1063410/0
+2001:1890:ff:ffff:12:122:83:238        7018  100125653    1469684       0       0 33w5d 23:48:06 Establ
+  inet6.0: 241642/241645/241645/0
+2001:1890:ff:ffff:12:122:120:7        7018   11656596     177370       0       2 4w0d 14:22:47 Establ
+  inet6.0: 1/241646/241646/0
+2001:1890:ff:ffff:12:122:124:12        7018   76746334    1469684       0       0 33w5d 23:48:06 Establ
+  inet6.0: 0/241646/241646/0
+2001:1890:ff:ffff:12:122:124:67        7018  102998807    1469685       0       0 33w5d 23:48:06 Establ
+  inet6.0: 0/241645/241645/0
+2001:1890:ff:ffff:12:122:124:138        7018   28025779     536047       0       6 12w2d 10:29:15 Establ
+  inet6.0: 0/241646/241646/0
+2001:1890:ff:ffff:12:122:125:6        7018   27467267     464066       0       6 10w4d 19:55:04 Establ
+  inet6.0: 0/241646/241646/0
+2001:1890:ff:ffff:12:122:125:44        7018   94657763    1469684       0       0 33w5d 23:48:02 Establ
+  inet6.0: 0/241645/241645/0            
+2001:1890:ff:ffff:12:122:125:106        7018    4853908      68799       0       3 1w4d 2:14:48 Establ
+  inet6.0: 0/241645/241645/0
+2001:1890:ff:ffff:12:122:125:132        7018   37908572     536047       0       3 12w2d 10:29:13 Establ
+  inet6.0: 0/241645/241645/0
+2001:1890:ff:ffff:12:122:125:165        7018   34726832     464070       0      10 10w4d 19:56:10 Establ
+  inet6.0: 0/241645/241645/0
+2001:1890:ff:ffff:12:122:125:224        7018  109810344    1469685       0       0 33w5d 23:48:08 Establ
+  inet6.0: 0/241645/241645/0
+2001:1890:ff:ffff:12:122:126:9        7018   94411414    1469684       0       0 33w5d 23:48:06 Establ
+  inet6.0: 0/241646/241646/0
+2001:1890:ff:ffff:12:122:126:64        7018   97706583    1469684       0       0 33w5d 23:47:58 Establ
+  inet6.0: 0/241645/241645/0
+2001:1890:ff:ffff:12:122:126:232        7018   77445412    1267802       0       2 29w1d 10:29:54 Establ
+  inet6.0: 0/241646/241646/0
+2001:1890:ff:ffff:12:122:127:66        7018   77573274    1469684       0       0 33w5d 23:48:01 Establ
+  inet6.0: 0/241646/241646/0
+2001:1890:ff:ffff:12:122:159:217        7018    3266167      30160       0       4 2w5d 12:00:14 Establ
+  inet6.0: 20/241657/241657/0           
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> show system
+                                     ^
+syntax error, expecting <command>.
+rviews@route-server.ip.att.net> show systemuptime
+                                     ^
+syntax error, expecting <command>.
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> set cli screen-length 0 
+Screen length set to 0
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> show system
+                                     ^
+syntax error, expecting <command>.
+rviews@route-server.ip.att.net> show systemuptime
+                                     ^
+syntax error, expecting <command>.
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> 
+
+rviews@route-server.ip.att.net> show system
+                                     ^
+syntax error, expecting <command>.
+rviews@route-server.ip.att.net> show systemuptime
+                                     ^
+syntax error, expecting <command>.
+
+rviews@route-server.ip.att.net> Warning: session will be closed in 1 minute if there is no activity
+Warning: session will be closed in 10 seconds if there is no activity
+Idle timeout exceeded: closing session
+
